@@ -7,7 +7,7 @@ class School
   end
 
   def add_student(name, grade)
-    @roster[grade] = [] unless @roster[grade].exists?
+    @roster[grade] = [] if @roster[grade].empty?
     @roster[grade] << name
   end
 end
