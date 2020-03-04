@@ -19,5 +19,6 @@ class School
     @roster.values.each do |values|
       values = values.sort
     end
+    return @roster
   end
 end
